@@ -20,6 +20,7 @@ python transactions_analysis.py <file_path> [OPTIONS]
 - `--query TEXT`: Query to filter transactions by description.
 - `--raw`: Ignore description mapping and use raw descriptions.
 - `--install-completion`: Install shell completion.
+- `--export`: Export the results to a csv file [results.csv] in the current directory.
 
 ## Examples
 
@@ -34,6 +35,20 @@ python transactions_analysis.py <file_path> [OPTIONS]
   Netflix                            -99.90      -9.99        10
   Spotify                            -75.00      -15.00       5
   Starbucks                          -18.00      -4.50        4
+  ```
+
+- Default usage with 30 days look-back period and export to a CSV:
+  ```bash
+  python transactions_analysis.py sample_transactions.csv --export
+  ```
+  **Sample Output:**
+  ```
+  Description                        Amount_sum  Amount_mean  Transaction_count
+  Amazon                             -399.80     -19.99       20
+  Netflix                            -99.90      -9.99        10
+  Spotify                            -75.00      -15.00       5
+  Starbucks                          -18.00      -4.50        4
+  Results exported to 'results.csv'.
   ```
 
 - Generate visualizations and use 60 days look-back period:
