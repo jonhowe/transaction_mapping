@@ -50,7 +50,9 @@ python transactions_analysis.py <file_path> [OPTIONS]
   ```
   **Visualizations:**
   - Bar plot of total amount by description.
+  ![Figure_1](https://github.com/jonhowe/transaction_mapping/assets/3604046/5648e891-c030-4d04-bcbf-7ca58e947909)
   - Heatmap of transaction counts by description.
+  ![heatmap](https://github.com/jonhowe/transaction_mapping/assets/3604046/9360cd23-3ecd-4bba-931e-b364050dd5ad)
 
 - Query transactions with descriptions containing "Amazon Marketplace" within the last 30 days:
   ```bash
